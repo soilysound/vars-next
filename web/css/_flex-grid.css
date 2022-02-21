@@ -1,0 +1,38 @@
+.flex-grid {
+    --basis: 0%;
+    --gap: var(--gap-300);
+    --wrap: wrap;
+    --grow: 1;
+    --collapse: 0;
+    --align: flex-start;
+    --justify: flex-start;
+    display: flex;
+    flex-wrap: var(--wrap);
+    align-content: var(--align);
+    justify-content: var(--justify);
+    gap: var(--gap);
+}
+
+.flex-grid>* {
+    flex-grow: var(--grow);
+    flex-shrink: 1;
+    flex-basis: calc(var(--basis) - var(--gap));
+    min-width: clamp( var(--min-width, 0px), (var(--collapse) - 100%) * 999, 100% - var(--gap));
+}
+
+.flex-grid>*:only-child {
+    flex-basis: var(--basis);
+}
+
+.grid {
+    --basis: auto;
+    --gap: var(--gap-300);
+    display: grid;
+    align-items: stretch;
+    gap: var(--gap);
+    grid-template-columns: repeat(auto-fill, minmax(var(--basis), 1fr));
+}
+
+.grid>* {
+    max-width: 100%;
+}

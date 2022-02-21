@@ -1,0 +1,123 @@
+:root {
+    /* GLOBAL */
+    /* 
+			- Values range from 100 (smallest) to 900 (largest)
+			- Scaling values scale from 400px browser width to 1000px browser width 
+		*/
+    --scaler: ((100vw - 400px) / (1000 - 400));
+    /* spacing */
+    --gap-0: 0;
+    --gap-100: clamp(4px, 4px + (4 * var(--scaler)), 8px);
+    --gap-200: clamp(8px, 8px + (4 * var(--scaler)), 12px);
+    --gap-300: clamp(12px, 12px + (6 * var(--scaler)), 18px);
+    --gap-400: clamp(18px, 18px + (6 * var(--scaler)), 24px);
+    --gap-500: clamp(24px, 24px + (6 * var(--scaler)), 30px);
+    --gap-600: clamp(30px, 30px + (10 * var(--scaler)), 40px);
+    --gap-700: clamp(40px, 40px + (12 * var(--scaler)), 52px);
+    --gap-800: clamp(52px, 52px + (18 * var(--scaler)), 70px);
+    --gap-900: clamp(68px, 68px + (24 * var(--scaler)), 92px);
+    /* fonts */
+    --font-size-100: clamp(14px, 14px + (2 * var(--scaler)), 16px);
+    --font-size-200: clamp(16px, 16px + (2 * var(--scaler)), 18px);
+    --font-size-300: clamp(18px, 18px + (4 * var(--scaler)), 22px);
+    --font-size-400: clamp(22px, 22px + (6 * var(--scaler)), 28px);
+    --font-size-500: clamp(26px, 26px + (8 * var(--scaler)), 34px);
+    --font-size-600: clamp(34px, 34px + (8 * var(--scaler)), 42px);
+    --font-size-700: clamp(42px, 42px + (10 * var(--scaler)), 52px);
+    --font-size-800: clamp(52px, 52px + (14 * var(--scaler)), 68px);
+    --font-size-900: clamp(68px, 68px + (20 * var(--scaler)), 88px);
+    --font-size-fixed-100: 14px;
+    --font-size-fixed-200: 16px;
+    --font-size-fixed-300: 18px;
+    --base-font-size: 1.125rem;
+    --label-text: 14px;
+    --supporting-text: 16px;
+    --component-text: var(--font-size-200);
+    --article-text: var(--font-size-300);
+    --line-height-100: 1.4;
+    --line-height-200: 1.3;
+    --line-height-300: 1.2;
+    --line-height-400: 1.2;
+    --line-height-500: 1.1;
+    --line-height-600: 1.1;
+    --line-height-700: 1;
+    --line-height-800: 0.9;
+    --line-height-900: 0.9;
+    --base-font: "Sky Text", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* layout */
+    --site-width: 1024px;
+    --site-width-md: 760px;
+    --site-width-sm: 480px;
+    --site-width-xs: 380px;
+    --site-gutter: var(--gap-400);
+    /* colors */
+    --shade-0: #FFF;
+    --shade-100: #F4F5F7;
+    --shade-200: #E2E2E2;
+    --shade-300: #9F9F9F;
+    --shade-400: #707070;
+    --shade-450: #4E5761;
+    --shade-500: #4A4A4A;
+    --shade-600: #453F3F;
+    --shade-650: #252836;
+    --shade-700: #252525;
+    --shade-800: #222222;
+    --shade-900: #111111;
+    --black-op80: rgba(0, 0, 0, 0.8);
+    --black-op60: rgba(0, 0, 0, 0.6);
+    --black-op40: rgba(0, 0, 0, 0.4);
+    /* gradients */
+    --shade-linear-100: linear-gradient(#F5F5F5, #E3E4E4);
+    --shade-linear-200: #fff;
+    /* utility colors */
+    --alert: #FF2744;
+    --success: #299934;
+    /* effects */
+    --shadow-drop: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-glow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+:root {
+    /* BRAND - these change per site */
+    --brand-primary: #063E7B;
+    --brand-secondary: #D0021B;
+    --brand-linear: linear-gradient(#164C99, #032C77);
+    --brand-shade-linear: linear-gradient(grey, silver);
+    --live: #d0021b;
+    --live-linear: linear-gradient(#E90E10, #BC0000);
+    --breaking: #FDE000;
+    --breaking-linear: linear-gradient(#F8EB1F, #F2CA06);
+    --breaking-color: black;
+}
+
+:root {
+    /* ALIASES - these form your THEME, and change in dark mode or other variations */
+    --text-color: var(--shade-500);
+    --text-color-dark: var(--shade-900);
+    --text-color-secondary: var(--shade-400);
+    --text-color-tertiary: var(--shade-300);
+    --text-color-on-dark: #fff;
+    --border-color-light: #fff;
+    --border-color: var(--shade-200);
+    --border-color-strong: #fff;
+    --link-color: #3157A1;
+    --link-color-on-dark: #2AA2E1;
+    --canvas: var(--shade-0);
+    --canvas-shade: var(--shade-100);
+    --canvas-shade-linear-100: #fff;
+    --component-canvas: var(--shade-0);
+    --component-canvas-shade: var(--shade-100);
+    --component-canvas-shade-linear: #fff;
+    --component-canvas-highlight: #fff;
+    --component-canvas-important: #222;
+}
+
+@media all and (prefers-color-scheme: dark) {
+     :root {
+        --text-color: var(--shade-100);
+        --canvas: var(--shade-900);
+        --canvas-shade: var(--shade-900);
+        --component-canvas: var(--shade-700);
+        --link-color: var(var(--link-color-on-dark));
+    }
+}

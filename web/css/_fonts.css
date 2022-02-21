@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Sky Text';
+    src: url('../fonts/sky-regular.woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sky Text';
+    src: url('../fonts/sky-medium.woff');
+    font-weight: bold;
+    font-display: swap;
+}

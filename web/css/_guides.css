@@ -1,0 +1,13 @@
+.thing {
+    display: grid;
+    place-items: center;
+    font-size: var(--font-size-fixed-100);
+    background: var(--component-canvas);
+    border: var(--gap) solid var(--brand-primary);
+    padding: var(--gap-100);
+}
+
+header,
+footer {
+    padding: var(--gap-400) 0;
+}

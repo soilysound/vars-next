@@ -1,0 +1,14 @@
+html {
+    font-family: var(--base-font);
+    font-size: var(--base-font-size);
+    color: var(--text-color);
+    line-height: var(--line-height-100);
+}
+
+body {
+    background: var(--canvas-shade);
+}
+
+a {
+    color: var(--link-color);
+}

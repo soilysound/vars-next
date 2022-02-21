@@ -1,0 +1,40 @@
+/* generic values  */
+
+.gap-100 {
+    gap: var(--gap-100)
+}
+
+.gap-200 {
+    gap: var(--gap-200)
+}
+
+.gap-300 {
+    gap: var(--gap-300)
+}
+
+.gap-400 {
+    gap: var(--gap-400)
+}
+
+.gap-500 {
+    gap: var(--gap-500)
+}
+
+.gap-600 {
+    gap: var(--gap-600)
+}
+
+.gap-700 {
+    gap: var(--gap-700)
+}
+
+.gap-800 {
+    gap: var(--gap-800)
+}
+
+.gap-900 {
+    gap: var(--gap-900)
+}
+
+
+/* aliases @TODO replace component-gap, padding, margin etc here */
