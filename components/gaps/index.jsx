@@ -7,7 +7,7 @@ export default function Gaps({ from, to, name = ''}) {
 }
 
 Gaps.propTypes = {
-	from: PropTypes.number,
-	to: PropTypes.number,
+	from: PropTypes.string,
+	to: PropTypes.string,
 	name: PropTypes.string,
 };

@@ -52,7 +52,7 @@
     --site-width-xs: 380px;
     --site-gutter: var(--gap-400);
     /* colors */
-    --shade-0: #fff;
+    --shade-0: #FFFFFF;
     --shade-100: #F4F5F7;
     --shade-200: #E2E2E2;
     --shade-300: #9F9F9F;
@@ -87,7 +87,7 @@
     --brand-secondary: #D0021B;
     --brand-linear: linear-gradient(#164C99, #032C77);
     --brand-shade-linear: linear-gradient(#f5f5f5, #e3e4e4);
-    --live: #d0021b;
+    --live: #D0021B;
     --live-linear: linear-gradient(#E90E10, #BC0000);
     --breaking: #FDE000;
     --breaking-linear: linear-gradient(#F8EB1F, #F2CA06);
@@ -96,21 +96,21 @@
 
 :root {
     /* THEME - light mode */
+    --canvas: var(--shade-0);
+    --canvas-shade: var(--shade-100);
+    --canvas-shade-linear: linear-gradient(#F5F5F5, #E3E4E4);
     --text-color: var(--shade-500);
-    --text-color-dark: var(--shade-900);
+    --text-color-strong: var(--shade-900);
     --text-color-secondary: var(--shade-400);
     --text-color-tertiary: var(--shade-300);
-    --text-color-on-dark: #fff;
+    --text-color-on-dark: var(--shade-0);
     --border-color: var(--shade-200);
     --border-color-strong: var(--shade-450);
     --link-color: #3157A1;
     --link-color-on-dark: #2AA2E1;
-    --canvas: var(--shade-0);
-    --canvas-shade: var(--shade-100);
-    --canvas-shade-linear-100: #fff;
     --component-canvas: var(--shade-0);
     --component-canvas-shade: var(--shade-100);
-    --component-canvas-shade-linear: #fff;
+    --component-canvas-shade-linear: linear-gradient(180deg, #f5f5f5, #e3e4e4);
     --component-canvas-highlight: var(--shade-linear-100);
     --component-canvas-important: var(--shade-800);
 }
@@ -118,13 +118,16 @@
 @media all and (prefers-color-scheme: dark) {
      :root {
         /* THEME - dark mode */
+        --canvas: var(--shade-900);
+        --canvas-shade: var(--shade-900);
+        --canvas-shade-linear: linear-gradient(var(--shade-800), var(--shade-900));
+        --text-color-strong: var(--shade-200);
         --text-color: var(--shade-100);
         --text-color-secondary: var(--shade-300);
         --text-color-tertiary: var(--shade-400);
-        --canvas: var(--shade-900);
-        --canvas-shade: var(--shade-900);
         --component-canvas: var(--shade-700);
         --component-canvas-shade: var(--shade-600);
+        --component-canvas-shade-linear: var(--shade-650);
         --component-canvas-highlight: var(--shade-650);
         --component-canvas-important: var(--shade-450);
         --link-color: var(--link-color-on-dark);

@@ -9,44 +9,49 @@ export default function Home() {
         <title>Core guides</title>
         <link rel="icon" href="/favicon.ico" />
 			</Head>
-			<header>Sky News</header>
+			<header>
+				<picture>
+					<source srcset="/sky-news-logo-dark.svg" media="(prefers-color-scheme: dark)" />
+					<img src="/sky-news-logo.svg" alt="sky news logo" className="header-logo" />
+				</picture>
+			</header>
 
-      <main class="flex-wrap gap-600">
+      <main className="flex-wrap gap-600">
         <h1 className="font-size-800">Vars v2.0</h1>
         <div className="flex-wrap gap-900">
-            <div className="flex-wrap gap-500 swatch-list">
-							<h2 className="font-size-500">Brand</h2>
+					<div className="flex-wrap gap-500 swatch-list">
+							<h2 className="font-size-500">Colors</h2>
+							<h3 className="font-size-300">Brand</h3>
 							<div className="grid" style={{ "--basis": "160px" }}>
-								<Swatch name="News Blue" cssvar="--brand-primary" color="#063E7B" />
+								<Swatch name="News Blue" cssvar="--brand-primary" />
 								<Swatch name="News Red" cssvar="--brand-secondary" />
 								<Swatch name="News Blue Linear" cssvar="--brand-linear" />
-								<Swatch name="News shade linear" cssvar="--brand-shade-linear"/>
+								<Swatch name="News shade linear" cssvar="--brand-shade-linear" />
 								<Swatch name="Breaking" cssvar="--breaking" />
 								<Swatch name="Breaking linear" cssvar="--breaking-linear" />
 								<Swatch name="Live" cssvar="--live" />
 								<Swatch name="Live linear" cssvar="--live-linear" />
 							</div>
-              <h2 className="font-size-500">Theme aliases</h2>
-              <div className="grid" style={{ "--basis": "160px" }}>
-								<Swatch name="Text color" cssvar="--text-color" color="#4A4A4A" />
-								<Swatch name="Text color dark" cssvar="--text-color-dark" color="#4A4A4A" />
-								<Swatch name="Text color secondary" cssvar="--text-color-secondary" color="#4A4A4A" />
-								<Swatch name="Text color tertiary" cssvar="--text-color-tertiary" color="#4A4A4A" />
-								<Swatch name="Text color on dark" cssvar="--text-color-on-dark" color="#4A4A4A" />
-								<Swatch name="Page canvas" cssvar="--canvas" color="#4A4A4A" />
-								<Swatch name="Page canvas shade" cssvar="--canvas-shade" color="#4A4A4A" />
-								<Swatch name="Component canvas" cssvar="--component-canvas" color="#4A4A4A" />
-								<Swatch name="Component canvas shade" cssvar="--component-canvas-shade" color="#4A4A4A" />
-								<Swatch name="Component canvas highlight" cssvar="--component-canvas-highlight" color="#4A4A4A" />
-								<Swatch name="Component canvas important" cssvar="--component-canvas-important" color="#4A4A4A" />
-								<Swatch name="Border color" cssvar="--border-color" color="#4A4A4A" />
-
-							<Swatch name="Border color strong" cssvar="--border-color-strong" color="#4A4A4A" />
-
+              <h3 className="font-size-300">Theme aliases</h3>
+							<div className="grid" style={{ "--basis": "160px" }}>
+								<Swatch name="Page canvas" cssvar="--canvas" />
+								<Swatch name="Page canvas shade" cssvar="--canvas-shade" />
+								<Swatch name="Page canvas shade linear" cssvar="--canvas-shade-linear" />
+								<Swatch name="Text color strong" cssvar="--text-color-strong" />
+								<Swatch name="Text color" cssvar="--text-color" />
+								<Swatch name="Text color secondary" cssvar="--text-color-secondary" />
+								<Swatch name="Text color tertiary" cssvar="--text-color-tertiary" />
+								<Swatch name="Text color on dark" cssvar="--text-color-on-dark" />
+								<Swatch name="Component canvas" cssvar="--component-canvas" />
+								<Swatch name="Component canvas shade" cssvar="--component-canvas-shade" />
+								<Swatch name="Component canvas highlight" cssvar="--component-canvas-highlight" />
+								<Swatch name="Component canvas important" cssvar="--component-canvas-important" />
+								<Swatch name="Border color" cssvar="--border-color" />
+								<Swatch name="Border color strong" cssvar="--border-color-strong" />
               </div>
-              <h2 className="font-size-500">Utility</h2>
+              <h3 className="font-size-300">Utility</h3>
               <div className="grid" style={{ "--basis": "160px" }}>
-								<Swatch name="Link" cssvar="--link-color" color="#063E7B" />
+								<Swatch name="Link" cssvar="--link-color" />
 								<Swatch name="Link on dark" cssvar="--link-color-on-dark" />
 								<Swatch name="Success" cssvar="--success" />
 								<Swatch name="Error" cssvar="--alert" />

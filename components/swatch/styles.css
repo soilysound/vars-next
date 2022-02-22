@@ -19,11 +19,24 @@
 
 .swatch-color span {
     position: absolute;
-    padding: 0 0 var(--gap-200) var(--gap-300);
+    margin: 0 0 var(--gap-200) var(--gap-300);
+    line-height: 1;
+    background: inherit;
+    background-clip: text;
+    color: transparent;
+    filter: invert(1) grayscale(1) contrast(9) sepia(1);
 }
 
 .swatch-color span:before {
-    content: attr(data-label)
+    content: attr(data-label);
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+@media all and (prefers-color-scheme: dark) {
+    .swatch-color span:not([data-label-dark=""]):before {
+        content: attr(data-label-dark);
+    }
 }
 
 .swatch-body {

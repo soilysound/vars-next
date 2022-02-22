@@ -1,3 +1,7 @@
+.header-logo {
+    width: 98px;
+}
+
 .thing {
     --initial-gap: 0;
     --gap: 0;
