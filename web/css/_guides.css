@@ -1,10 +1,33 @@
 .thing {
+    --initial-gap: 0;
+    --gap: 0;
     display: grid;
     place-items: center;
     font-size: var(--font-size-fixed-100);
     background: var(--component-canvas);
-    border: var(--gap) solid var(--brand-primary);
+    border: var(--gap) solid var(--border-color);
     padding: var(--gap-100);
+    outline: var(--initial-gap) solid var(--link-color);
+    outline-offset: calc(var(--initial-gap) * -1);
+}
+
+.font-list p:before {
+    content: attr(data-label);
+    display: block;
+    width: fit-content;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 0 4px;
+    border-radius: var(--border-radius-sm);
+    line-height: 1.4;
+    margin-bottom: 0.5em;
+}
+
+.font-list p {
+    background: var(--component-canvas);
+    max-width: 800px;
+    padding: var(--gap-300);
+    border-radius: var(--border-radius-md);
 }
 
 header,

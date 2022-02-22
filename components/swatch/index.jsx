@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 
-export default function Swatch({ style, name = '', color = '', cssvar = '' }) {
+export default function Swatch({ style, name = '', color = '', darkcolor = '', cssvar = '' }) {
   return (
     <div className="swatch">
 			<div className="swatch-color" style={{ "background": `var(${cssvar})`, ...style }}>
-				{ color }</div>
+				<span data-label={color} data-label-dark={darkcolor}></span></div>
 			<div className="swatch-body">
 				<strong>{ name }</strong>
 				<em>{ cssvar }</em>
