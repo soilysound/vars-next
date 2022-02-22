@@ -85,7 +85,7 @@
     /* BRAND - Sky News */
     --brand-primary: #063E7B;
     --brand-secondary: #D0021B;
-    --brand-linear: linear-gradient(#164C99, #032C77);
+    --brand-primary-linear: linear-gradient(#164C99, #032C77);
     --brand-shade-linear: linear-gradient(#f5f5f5, #e3e4e4);
     --live: #D0021B;
     --live-linear: linear-gradient(#E90E10, #BC0000);

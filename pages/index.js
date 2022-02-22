@@ -25,7 +25,7 @@ export default function Home() {
 							<div className="grid" style={{ "--basis": "160px" }}>
 								<Swatch name="News Blue" cssvar="--brand-primary" />
 								<Swatch name="News Red" cssvar="--brand-secondary" />
-								<Swatch name="News Blue Linear" cssvar="--brand-linear" />
+								<Swatch name="News Blue Linear" cssvar="--brand-primary-linear" />
 								<Swatch name="News shade linear" cssvar="--brand-shade-linear" />
 								<Swatch name="Breaking" cssvar="--breaking" />
 								<Swatch name="Breaking linear" cssvar="--breaking-linear" />
