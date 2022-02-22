@@ -20,7 +20,7 @@ export default function Home() {
         <h1 className="font-size-800">Vars v2.0</h1>
         <div className="flex-wrap gap-900">
 					<div className="flex-wrap gap-500 swatch-list">
-							<h2 className="font-size-500">Colors</h2>
+							<h2 className="font-size-500" id="colors">Colors</h2>
 							<h3 className="font-size-300">Brand</h3>
 							<div className="grid" style={{ "--basis": "160px" }}>
 								<Swatch name="News Blue" cssvar="--brand-primary" />
@@ -58,22 +58,22 @@ export default function Home() {
               </div>
             </div>
             <div className="font-list flex-wrap">
-                <h2 className="font-size-500">Font sizes</h2>
+                <h2 className="font-size-500" id="font-sizes">Font sizes</h2>
                 <p className="font-size-100" data-label="--font-size-100: (14-16px)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque distinctio obcaecati exercitationem nulla eaque, repudiandae tempore tenetur corporis delectus esse, nemo vel reiciendis dolore fugiat? Alias, consequuntur? Eligendi, voluptatibus
                     unde?
                 </p>
                 <p className="font-size-200" data-label="--font-size-200: (16-18px)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque distinctio obcaecati exercitationem nulla eaque, repudiandae tempore tenetur corporis delectus esse, nemo vel reiciendis dolore fugiat?</p>
                 <p className="font-size-300" data-label="--font-size-300: (18-22px)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque distinctio obcaecati exercitationem nulla eaque.</p>
-                <p className="font-size-400" data-label="--font-size-400: (14-16px)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque distinctio obcaecati exercitationem nulla eaque.</p>
-                <p className="font-size-500" data-label="--font-size-500: (14-16px)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque distinctio obcaecati exercitationem nulla eaque.</p>
-                <p className="font-size-600" data-label="--font-size-600: (14-16px)">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p className="font-size-700" data-label="--font-size-700: (14-16px)">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p className="font-size-800" data-label="--font-size-800: (14-16px)">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p className="font-size-900" data-label="--font-size-900: (14-16px)">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p className="font-size-400" data-label="--font-size-400: (22-28px)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque distinctio obcaecati exercitationem nulla eaque.</p>
+                <p className="font-size-500" data-label="--font-size-500: (26-34px)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque distinctio obcaecati exercitationem nulla eaque.</p>
+                <p className="font-size-600" data-label="--font-size-600: (34-42px)">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p className="font-size-700" data-label="--font-size-700: (42-52px)">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p className="font-size-800" data-label="--font-size-800: (52-68px)">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p className="font-size-900" data-label="--font-size-900: (68-88px)">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
 
             <div className="flex-wrap gaps-list">
-              <h2 className="font-size-500">Spacing gaps</h2>
+              <h2 className="font-size-500" id="spacing">Spacing gaps</h2>
 							<div className="grid" style={{ "--basis": "240px" }}>
 								<Gaps from='4' to='8' name="--gap-100"/>
 								<Gaps from='8' to='12' name="--gap-200" />
