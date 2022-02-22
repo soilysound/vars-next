@@ -1,5 +1,20 @@
+header {
+    background: var(--component-canvas-dark);
+}
+
 .header-logo {
     width: 98px;
+}
+
+.header-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.header-nav a {
+    font-weight: bold;
+    white-space: nowrap;
+    color: var(--link-color-on-dark);
 }
 
 .thing {

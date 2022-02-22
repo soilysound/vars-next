@@ -113,6 +113,7 @@
     --component-canvas-shade-linear: linear-gradient(180deg, #f5f5f5, #e3e4e4);
     --component-canvas-highlight: var(--shade-linear-100);
     --component-canvas-important: var(--shade-800);
+    --component-canvas-dark: var(--shade-900);
 }
 
 @media all and (prefers-color-scheme: dark) {
@@ -130,6 +131,7 @@
         --component-canvas-shade-linear: var(--shade-650);
         --component-canvas-highlight: var(--shade-650);
         --component-canvas-important: var(--shade-450);
+        --component-canvas-dark: var(--shade-800);
         --link-color: var(--link-color-on-dark);
         --border-color: var(--shade-450);
         --border-color-strong: var(--shade-300);

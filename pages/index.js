@@ -4,16 +4,21 @@ import Gaps from '../components/gaps';
 
 export default function Home() {
   return (
-    <div className="flex-wrap flex-wrap-site-width flex-wrap-gutter gap-400">
+    <div className="flex-wrap flex-wrap-site-width flex-wrap-gutter gap-600">
       <Head>
         <title>Core guides</title>
         <link rel="icon" href="/favicon.ico" />
 			</Head>
-			<header>
-				<picture>
-					<source srcset="/sky-news-logo-dark.svg" media="(prefers-color-scheme: dark)" />
-					<img src="/sky-news-logo.svg" alt="sky news logo" className="header-logo" />
-				</picture>
+			<header class="flex-wrap-full-width">
+				<div class="flex-grid flex-wrap flex-wrap-site-width flex-wrap-gutter gap-600" style={{ "--basis": 0, "--grow": 0 }}>
+				<img src="/sky-news-logo-dark.svg" alt="sky news logo" className="header-logo" />
+				<nav class="header-nav">
+					<ul class="flex-grid gap-600" style={{"--align": "flex-end"}}>
+					<li><a href="#colors">Colors</a></li>
+					<li><a href="#font-sizes">Font sizes</a></li>
+					<li><a href="#spacing">Spacing</a></li>
+				</ul></nav>
+				</div>
 			</header>
 
       <main className="flex-wrap gap-600">
@@ -46,6 +51,7 @@ export default function Home() {
 								<Swatch name="Component canvas shade" cssvar="--component-canvas-shade" />
 								<Swatch name="Component canvas highlight" cssvar="--component-canvas-highlight" />
 								<Swatch name="Component canvas important" cssvar="--component-canvas-important" />
+								<Swatch name="Component canvas dark" cssvar="--component-canvas-dark" />
 								<Swatch name="Border color" cssvar="--border-color" />
 								<Swatch name="Border color strong" cssvar="--border-color-strong" />
               </div>
@@ -73,7 +79,7 @@ export default function Home() {
             </div>
 
             <div className="flex-wrap gaps-list">
-              <h2 className="font-size-500" id="spacing">Spacing gaps</h2>
+              <h2 className="font-size-500" id="spacing">Spacing</h2>
 							<div className="grid" style={{ "--basis": "240px" }}>
 								<Gaps from='4' to='8' name="--gap-100"/>
 								<Gaps from='8' to='12' name="--gap-200" />
