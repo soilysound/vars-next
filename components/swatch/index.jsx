@@ -31,5 +31,6 @@ Swatch.propTypes = {
 	style: PropTypes.object,
 	name: PropTypes.string,
 	color: PropTypes.string,
-	var: PropTypes.string,
+	darkcolor: PropTypes.string,
+	cssvar: PropTypes.string,
 };

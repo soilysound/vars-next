@@ -5,6 +5,7 @@
     background: var(--component-canvas);
     box-shadow: var(--shadow-glow);
     border-radius: 4px;
+    max-width: 300px;
 }
 
 .swatch-color {
@@ -22,6 +23,7 @@
     margin: 0 0 var(--gap-200) var(--gap-300);
     line-height: 1;
     background: inherit;
+    -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     filter: invert(1) grayscale(1) contrast(9) sepia(1);
