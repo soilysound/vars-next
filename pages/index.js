@@ -9,10 +9,10 @@ export default function Home() {
         <title>Core guides</title>
         <link rel="icon" href="/favicon.ico" />
 			</Head>
-			<header class="flex-wrap-full-width">
-				<div class="flex-grid flex-wrap flex-wrap-site-width flex-wrap-gutter gap-600" style={{ "--basis": 0, "--grow": 0 }}>
+			<header className="flex-wrap-full-width">
+				<div className="flex-grid flex-wrap flex-wrap-site-width flex-wrap-gutter gap-600" style={{ "--basis": 0, "--grow": 0 }}>
 				<img src="/sky-news-logo-dark.svg" alt="sky news logo" className="header-logo" />
-				<nav class="header-nav">
+				<nav className="header-nav">
 					<ul class="flex-grid gap-600" style={{"--align": "flex-end"}}>
 					<li><a href="#colors">Colors</a></li>
 					<li><a href="#font-sizes">Font sizes</a></li>
