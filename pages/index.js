@@ -1,8 +1,23 @@
 import Head from 'next/head';
 import Swatch from '../components/swatch';
 import Gaps from '../components/gaps';
+import { useRef } from 'react';
 
 export default function Home() {
+	
+	const darkModeSwitch = useRef(null);
+  const onButtonClick = () => {
+    // `current` points to the mounted text input element
+		document.querySelectorAll('link[data-media="(prefers-color-scheme: dark)"]').forEach((link) => {
+			const media = link.getAttribute('media');
+			if (media) {
+				link.removeAttribute('media');
+			}
+			else {
+				link.setAttribute('media', link.getAttribute('data-media'))}
+		})
+	};
+	
   return (
     <div className="flex-wrap flex-wrap-site-width flex-wrap-gutter gap-600">
       <Head>
@@ -17,11 +32,12 @@ export default function Home() {
 					<li><a href="#colors">Colors</a></li>
 					<li><a href="#font-sizes">Font sizes</a></li>
 					<li><a href="#spacing">Spacing</a></li>
-				</ul></nav>
+						</ul></nav>
+					<button ref={darkModeSwitch} onClick={onButtonClick} className="font-size-100">dark/light</button>
 				</div>
 			</header>
 
-      <main className="flex-wrap gap-600">
+      <main className="flex-wrap gap">
         <h1 className="font-size-800">Vars v2.0</h1>
         <div className="flex-wrap gap-900">
 					<div className="flex-wrap gap-500 swatch-list">
@@ -91,7 +107,6 @@ export default function Home() {
 								<Gaps from='46' to='70' name="--gap-800" />
 								<Gaps from='62' to='92' name="--gap-900"/>
                 </div>
-                
             </div>
         </div>
 			</main>

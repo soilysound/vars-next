@@ -1,5 +1,15 @@
 /* generic values  */
 
+.gap-any {
+    /* pass any (unitless) to and from value for arbitrary gap scaling */
+    --gap-from: 16;
+    --gap-to: 24;
+    --gap-from-px: calc(var(--gap-from) * 1px);
+    --gap-to-pixel: calc(var(--gap-to) * 1px);
+    --gap-diff: calc(var(--gap-to) - var(--gap-from));
+    font-size: clamp(var(--gap-from-px), var(--gap-from-px) + (var(--gap-diff) * var(--scaler)), var(--gap-to-pixel));
+}
+
 .gap-100 {
     gap: var(--gap-100)
 }

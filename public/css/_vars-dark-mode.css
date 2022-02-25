@@ -1,0 +1,24 @@
+:root {
+    /* THEME - dark mode */
+    --canvas: var(--shade-900);
+    --canvas-shade: var(--shade-900);
+    --canvas-shade-linear: linear-gradient(var(--shade-800), var(--shade-900));
+    --text-color-strong: var(--shade-200);
+    --text-color: var(--shade-100);
+    --text-color-secondary: var(--shade-300);
+    --text-color-tertiary: var(--shade-400);
+    --component-canvas: var(--shade-700);
+    --component-canvas-shade: var(--shade-600);
+    --component-canvas-shade-linear: var(--shade-650);
+    --component-canvas-highlight: var(--shade-650);
+    --component-canvas-important: var(--shade-450);
+    --component-canvas-dark: var(--shade-800);
+    --link-color: var(--link-color-on-dark);
+    --border-color: var(--shade-450);
+    --border-color-strong: var(--shade-300);
+}
+
+:root {
+    /* BRAND - Sky News dark mode */
+    --brand-shade-linear: linear-gradient(#252525, #2b2b2b);
+}

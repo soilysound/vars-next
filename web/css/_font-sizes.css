@@ -1,3 +1,15 @@
+.font-size-any {
+    /* pass any (unitless) to and from value for arbitrary font scaling */
+    --size-from: 16;
+    --size-to: 24;
+    --line-height: calc(1.7ex + 9px);
+    --size-from-px: calc(var(--size-from) * 1px);
+    --size-to-pixel: calc(var(--size-to) * 1px);
+    --size-diff: calc(var(--size-to) - var(--size-from));
+    font-size: clamp(var(--size-from-px), var(--size-from-px) + (var(--size-diff) * var(--scaler)), var(--size-to-pixel));
+    line-height: var(--line-height);
+}
+
 .font-size-100 {
     font-size: var(--font-size-100);
     line-height: var(--line-height-100);
